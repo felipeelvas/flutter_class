@@ -13,11 +13,11 @@ class Validator {
     return null;
   }
 
-  static String? validatePassword(String value) {
-    if (value.isEmpty) {
+  static String? validatePassword(String password) {
+    if (password.isEmpty) {
       return 'Password is required';
     }
-    if (value.length < 6) {
+    if (password.length < 6) {
       return 'Password must be at least 6 characters long';
     }
     return null;
