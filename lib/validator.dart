@@ -2,7 +2,7 @@
 class Validator {
   static String? validateEmail(String email) {
     if (email.isEmpty) {
-      return 'Email is required';
+      return 'Required Field';
     }
     String emailPattern = r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$';
     RegExp regExp = RegExp(emailPattern);
@@ -15,7 +15,7 @@ class Validator {
 
   static String? validatePassword(String password) {
     if (password.isEmpty) {
-      return 'Password is required';
+      return 'Required Field';
     }
     if (password.length < 6) {
       return 'Password must be at least 6 characters long';

@@ -7,7 +7,7 @@ void main(){
     var result = Validator.validateEmail('');
 
     //Assert
-    expect(result, 'Email is required');
+    expect(result, 'Required Field');
   });
 
   test('Validate for invalid email', () {
@@ -30,7 +30,7 @@ void main(){
     var result = Validator.validatePassword('');
 
     //Assert
-    expect(result, 'Password is required');
+    expect(result, 'Required Field');
   });
 
   test('Validate for password with less than 6 characters', () {
